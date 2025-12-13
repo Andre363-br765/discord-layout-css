@@ -25,9 +25,9 @@ header p {
    ========================== */
 
 /* Títulos gerais das features */
-.feature-left h2,
+.feature-left-big h2,
 .feature-right h2,
-.feature-left2 h2,
+.feature-left-small h2,
 .feature-bottom h2 {
   font-weight: 800;
   font-size: 40px;
@@ -37,7 +37,7 @@ header p {
 }
 
 /* Título específico do feature-left (ajuste fino) */
-.feature-left .text h2 {
+.feature-left-big .text h2 {
   font-family: var(--font-text);
   font-style: normal;
   line-height: 1.3;
@@ -50,7 +50,7 @@ header p {
 }
 
 /* Título específico do feature-left2 */
-.feature-left2 h2 {
+.feature-left-small h2 {
   width: 329px;
   height: 108px;
 }
@@ -67,9 +67,9 @@ header p {
    PARÁGRAFOS DAS FEATURES
    ========================== */
 
-.feature-left p,
+.feature-left-big p,
 .feature-right p,
-.feature-left2 p,
+.feature-left-small p,
 .feature-bottom p {
   font-family: var(--font-text);
   font-weight: 400;
@@ -79,7 +79,7 @@ header p {
 }
 
 /* Ajustes finos do feature-left */
-.feature-left .text p {
+.feature-left-big .text p {
   font-style: normal;
   width: 348px;
   height: 88px;
@@ -89,7 +89,7 @@ header p {
 }
 
 /* Ajustes finos do feature-left2 */
-.feature-left2 p {
+.feature-left-small p {
   width: 348px;
   height: 110px;
 }
