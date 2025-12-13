@@ -54,55 +54,51 @@ header {
   color: var(--color-white);
 }
 
-.feature-left {
+.feature-left,
+.feature-left2,
+.feature-right,
+.feature-bottom {
   display: flex;
   align-items: center;
-  gap: 16px; /* conforme seu design */
+  gap: 16px;
   padding: 60px 20px;
+  position: relative;
 }
 
-.feature-left img {
+.feature-left {
+  align-items: flex-start;
+}
+
+.feature-left img,
+.feature-left2 img,
+.feature-right img,
+.feature-bottom img {
+  opacity: 1;
+  object-fit: cover;
+}
+
+.feature-left img,
+.feature-right img,
+.feature-left2 img {
   width: 607px;
   height: 394px;
-  opacity: 1;
-  object-fit: cover; /* mantém proporção e preenche a área */
 }
 
 .feature-left .text {
-  max-width: 971px; /* combinando com o total da imagem + texto */
-}
-
-.feature-left h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800; /* ExtraBold */
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  margin-bottom: 16px;
-}
-
-.feature-left p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-}
-
-/* 2 */
-.feature-right {
-  display: flex;
-  align-items: center;
-  gap: 16px; /* espaço entre texto e imagem */
-  padding: 60px 20px;
-  justify-content: center; /* centraliza horizontalmente */
-}
-
-.feature-right img {
-  width: 607px;
-  height: 394px;
+  position: relative;
+  width: 348px;
+  /* largura combinada do h2 + p */
+  height: 374px; /* altura combinada do h2 + p */
   opacity: 1;
-  object-fit: cover; /* mantém proporção */
+}
+
+.feature-left2 .text {
+  width: 348px;
+  height: 110px;
+}
+
+.feature-right {
+  justify-content: center;
 }
 
 .feature-right .text {
@@ -110,158 +106,21 @@ header {
   height: 212px;
 }
 
-.feature-right h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800; /* ExtraBold */
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  margin-bottom: 16px;
-}
-
-.feature-right p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-}
-
-/* 3 */
-.feature-left2 {
-  display: flex;
-  align-items: center;
-  gap: 16px; /* espaçamento entre imagem e texto */
-  padding: 60px 20px;
-}
-
-.feature-left2 img {
-  width: 607px;
-  height: 394px;
-  opacity: 1;
-  object-fit: cover;
-}
-
-.feature-left2 .text {
-  width: 348px;
-  height: 110px; /* área do parágrafo */
-}
-
-.feature-left2 h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800; /* ExtraBold */
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  width: 329px;
-  height: 108px;
-  margin-bottom: 16px;
-}
-
-.feature-left:nth-of-type(3) p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  width: 348px;
-  height: 110px;
-}
-
-/* 4 */
-.feature-bottom {
-  display: flex;
-  flex-direction: column; /* texto em cima, imagem embaixo */
-  align-items: center;
-  gap: 16px; /* espaçamento entre texto e imagem */
-  padding: 60px 20px;
-  text-align: center; /* centraliza todo o conteúdo */
-}
-
-.feature-bottom img {
-  width: 784px;
-  height: 508px;
-  opacity: 1;
-  object-fit: cover;
-}
-
-.feature-bottom h2 {
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  width: 608px;
-  height: 80px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.feature-bottom p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  width: 802px;
-  height: 44px;
-  text-align: center;
-}
-
-/* 
-
-.feature {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 60px 20px;
-}
-
-.feature img {
-  width: 500px;
-  max-width: 100%;
-}
-
-.feature .text {
-  max-width: 500px;
-}
-
-.feature h2 {
-  font-size: 2rem;
-  margin-bottom: 16px;
-}
-
-.feature p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-
-
-
-.feature-left {
-  flex-direction: row;
-}
-
-.feature-right {
-  flex-direction: row-reverse;
-}
-
 .feature-bottom {
   flex-direction: column;
   text-align: center;
 }
 
-
-
- */
+.feature-bottom img {
+  width: 784px;
+  height: 508px;
+}
 
 /* ==========================
    FOOTER
    ========================== */
 footer {
-  background-color: black;
+  background-color: var(--color-black);
   display: flex;
   justify-content: center;
   align-items: center;
