@@ -2,7 +2,7 @@
    HEADER
    ========================== */
 header {
-  background-image: url("../assets/images/image-header.png");
+  background-image: url("../../assets/images/image-header.png") ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

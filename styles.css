@@ -2,8 +2,10 @@
    IMPORTS
    ========================== */
    
-@import url('./src/css/reset.css');
-@import url('./src/css/variables.css');
-@import url('./src/css/tipografia.css');
-@import url('./src/css/layout.css');
-@import url('./src/css/responsive.css');
+@import url('./src/css/styles/reset.css');
+@import url('./src/css/styles/variables.css');
+@import url('./src/css/styles/tipografia.css');
+@import url('./src/css/styles/layout.css');
+
+
+@import url('./src/css/responsive/celulares.css');
