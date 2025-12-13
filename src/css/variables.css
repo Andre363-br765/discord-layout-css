@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+:root {
+  /* font */
+  --font-title: "Luckiest Guy", cursive;
+}

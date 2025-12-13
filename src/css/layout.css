@@ -1,0 +1,80 @@
+/* ==========================
+   ORGANIZAÇÃO DO CSS LIMPA
+   ========================== */
+
+header {
+  background-image: url("../assets/images/image-header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 459px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+/* ==========================
+   SEÇÕES BASE
+   ========================== */
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.feature img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.feature .text {
+  max-width: 500px;
+}
+
+.feature h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ==========================
+   POSICIONAMENTO DAS SEÇÕES
+   ========================== */
+.feature-left {
+  flex-direction: row;
+}
+
+.feature-right {
+  flex-direction: row-reverse;
+}
+
+.feature-bottom {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.discord-logo {
+  width: 230px;
+  height: 63px;
+}

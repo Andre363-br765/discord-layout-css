@@ -1,0 +1,29 @@
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    height: auto;
+    padding: 20px;
+  }
+  
+  /* Seções */
+  .feature,
+  .feature-left,
+  .feature-right {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px 0;
+  }
+}
