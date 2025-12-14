@@ -12,20 +12,20 @@
   }
 
   header h1 {
-    width: 381px; 
-    height: 64px;
-    font-size: 32px; 
+    width: 100%;
+    max-width: 381px;
+    font-size: 32px;
     line-height: 1.2;
     margin: 0;
-    text-align: left; 
+    text-align: left;
   }
 
   header p {
-    width: 381px; 
-    height: 132px;
+    width: 100%;
+    max-width: 381px;
     font-size: 16px;
     line-height: 1.5;
-    margin: 16px 0 0 0;
+    margin-top: 16px;
     text-align: left;
   }
 
@@ -37,175 +37,92 @@
 
   .actions .btn1,
   .actions .btn2 {
-    width: 381px;
+    width: 100%;
+    max-width: 381px;
     height: 52px;
     border-radius: 28px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .feature-left-big {
+  /* ---------- FEATURES ---------- */
+  .feature-left-big,
+  .feature-right,
+  .feature-left-small,
+  .feature-bottom {
     flex-direction: column;
     align-items: center;
     padding: 30px 15px;
   }
 
-  .feature-left-big img {
-    width: 379px;
-    height: 252px;
+  /* Imagens */
+  .feature-left-big img,
+  .feature-right img,
+  .feature-left-small img,
+  .feature-bottom img {
+    width: 100%;
+    max-width: 379px;
+    height: auto;
     object-fit: cover;
     margin-bottom: 16px;
   }
 
-  .feature-left-big .text h2 {
-    width: 370px;
-    /* height: 99px; */
-    /* height: 88px; */
+  /* Textos */
+  .feature-left-big .text h2,
+  .feature-right .text h2,
+  .feature-left-small .text h2,
+  .feature-bottom .text h2 {
+    width: 100%;
+    max-width: 370px;
     font-size: 24px;
     line-height: 1.3;
-    letter-spacing: 1px;
-    text-align: left;
     margin: 0 auto 8px auto;
-    /* position: static; */
+    text-align: left;
   }
 
-  .feature-left-big .text p {
-    width: 378px;
-    height: 88px;
+  .feature-left-big .text p,
+  .feature-right .text p,
+  .feature-left-small .text p,
+  .feature-bottom .text p {
+    width: 100%;
+    max-width: 378px;
     font-size: 14px;
     line-height: 1.4;
-    margin: 0 auto;
+    margin: 0 auto 16px auto;
     text-align: left;
-    /* position: static; */
   }
 
-
-
-
-
-
-
-
-
-  .feature-right {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* força imagem primeiro */
+  /* Ajuste específico para feature-right: imagem primeiro */
   .feature-right img {
     order: 1;
-    width: 379px;
-    height: 252px;
-    object-fit: cover;
-    margin-bottom: 16px;
   }
-
-  /* texto depois */
   .feature-right .text {
     order: 2;
   }
 
-  .feature-right .text h2 {
-    width: 370px;
-    height: 99px;
-    font-size: 24px;
-    line-height: 1.3;
-    text-align: left;
-    margin: 0 auto 8px auto;
-  }
-
-  .feature-right .text p {
-    width: 378px;
-    height: 88px;
-    font-size: 14px;
-    line-height: 1.4;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .feature-left-small {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 15px;
-  }
-
-  .feature-left-small img {
-    width: 379px;
-    height: 252px;
-    object-fit: cover;
-    margin-bottom: 16px;
-  }
-
-  .feature-left-small .text {
-    width: 100%;
-    height: auto;
-  }
-
-  .feature-left-small .text h2 {
-    width: 370px;
-    height: 99px;
-    font-size: 24px;
-    line-height: 1.3;
-    text-align: left;
-    margin: 0 auto 8px auto;
-    position: static;
-  }
-
-  .feature-left-small .text p {
-    width: 378px;
-    height: 88px;
-    font-size: 14px;
-    line-height: 1.4;
-    text-align: left;
-    margin: 0 auto;
-    position: static;
-  }
-
   .feature-bottom {
-    padding: 30px 15px;
     align-items: center;
-    flex-direction: column;
-  }
-
-  .feature-bottom .text {
-    width: 100%;
-    height: auto;
+    text-align: center;
   }
 
   .feature-bottom .text h2 {
-    width: 370px;
-    height: 99px;
-    font-size: 24px;
-    line-height: 1.3;
     text-align: center;
-    margin: 0 auto 8px auto;
-  }
-
-  .feature-bottom .text p {
-    width: 378px;
-    height: 88px;
-    font-size: 14px;
-    line-height: 1.4;
-    text-align: center;
-    margin: 0 auto 16px auto;
+    align-items: center;
   }
 
   .feature-bottom img {
-    width: 379px;
-    height: 252px;
-    object-fit: cover;
+    margin-left: 0;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 784px;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 16px 10px;
+  }
+
+  .discord-logo {
+    width: 180px;
+    height: auto;
   }
 }

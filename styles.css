@@ -1,11 +1,18 @@
 /* ==========================
-   IMPORTS
+   IMPORTS GERAIS
    ========================== */
-   
+
+/* Reset e variáveis */
 @import url('./src/css/styles/reset.css');
 @import url('./src/css/styles/variables.css');
+
+/* Tipografia e layout base */
 @import url('./src/css/styles/tipografia.css');
 @import url('./src/css/styles/layout.css');
 
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
 
-@import url('./src/css/responsive/test.css');
+/* Celulares */
+@import url('./src/css/responsive/celulares.css');

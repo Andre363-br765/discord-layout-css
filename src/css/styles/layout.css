@@ -60,14 +60,13 @@ header {
 /* Containers gerais */
 .feature-left-big,
 .feature-left-small,
-.feature-right,
-.feature-bottom {
+.feature-right {
   display: flex;
-  align-items: flex-start; /* padrão flex-start para todas */
+  align-items: flex-start; 
   gap: 16px;
   padding: 60px 20px;
   position: relative;
-  flex-wrap: wrap; /* permite ajustar conteúdo em telas menores */
+  flex-wrap: wrap;
 }
 
 /* Feature-left */
@@ -78,29 +77,26 @@ header {
 /* Imagens das features */
 .feature-left-big img,
 .feature-left-small img,
-.feature-right img,
-.feature-bottom img {
+.feature-right img {
   opacity: 1;
   object-fit: cover;
-  max-width: 100%; /* para não estourar em telas pequenas */
-  height: auto; /* altura automática */
+  max-width: 100%; 
+  height: auto; 
 }
 
 .feature-left-big img,
 .feature-right img,
 .feature-left-small img {
   width: 607px;
-  height: auto; /* remove height fixo */
+  height: auto; 
 }
 
 .feature-left-big .text {
   width: 348px;
-  /* height removido */
 }
 
 .feature-left-small .text {
   width: 348px;
-  /* height removido */
 }
 
 .feature-right {
@@ -110,17 +106,20 @@ header {
 
 .feature-right .text {
   width: 351px;
-  /* height removido */
 }
 
 .feature-bottom {
   flex-direction: column;
-  text-align: center;
+  text-align: center; 
+  align-items: flex-start;
 }
 
 .feature-bottom img {
   width: 784px;
+  max-width: 100%;
   height: auto;
+  margin-left: 250px; 
+  margin-top: 16px;
 }
 
 /* ==========================
