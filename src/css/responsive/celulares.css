@@ -90,7 +90,6 @@
     text-align: left;
   }
 
-  /* Ajuste específico para feature-right: imagem primeiro */
   .feature-right img {
     order: 1;
   }
