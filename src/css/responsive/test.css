@@ -1,0 +1,106 @@
+/* ==========================
+   HEADER - RESPONSIVIDADE
+   ========================== */
+@media (max-width: 768px) {
+  header {
+    padding: 40px 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 {
+    width: 100%;
+    max-width: 381px;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+  }
+
+  header p {
+    width: 100%;
+    max-width: 381px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .actions .btn1,
+  .actions .btn2 {
+    width: 100%;
+    max-width: 381px;
+    height: 52px;
+    border-radius: 28px;
+  }
+
+  /* ---------- FEATURES ---------- */
+  .feature-left-big,
+  .feature-right,
+  .feature-left-small,
+  .feature-bottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+
+  /* Imagens */
+  .feature-left-big img,
+  .feature-right img,
+  .feature-left-small img,
+  .feature-bottom img {
+    width: 100%;
+    max-width: 379px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+
+  /* Textos */
+  .feature-left-big .text h2,
+  .feature-right .text h2,
+  .feature-left-small .text h2,
+  .feature-bottom .text h2 {
+    width: 100%;
+    max-width: 370px;
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 0 auto 8px auto;
+    text-align: left;
+  }
+
+  .feature-left-big .text p,
+  .feature-right .text p,
+  .feature-left-small .text p,
+  .feature-bottom .text p {
+    width: 100%;
+    max-width: 378px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 auto 16px auto;
+    text-align: left;
+  }
+
+  /* Ajuste específico para feature-right: imagem primeiro */
+  .feature-right img {
+    order: 1;
+  }
+  .feature-right .text {
+    order: 2;
+  }
+
+  /* Feature-bottom centralizado */
+  .feature-bottom .text h2,
+  .feature-bottom .text p {
+    text-align: center;
+  }
+}
